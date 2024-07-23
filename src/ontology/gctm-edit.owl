@@ -15,6 +15,11 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/>)
 Annotation(dcterms:title "GeoCore Time Module")
 
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000000>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000001>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000002>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000003>))
+Declaration(Class(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000004>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -34,6 +39,56 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000000> (geochronologic eon)
+
+AnnotationAssertion(dce:source <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000000> "https://stratigraphy.org/guide/chron")
+AnnotationAssertion(rdfs:comment <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000000> "An eonothem is a chronostratigraphic unit greater than an erathem. The geochronologic equivalent is an eon. Three eonothems are generally recognized, from older to younger, the Archean, Proterozoic and Phanerozoic eonothems. The combined first two are usually referred to as the Precambrian.
+
+The eons take the same name as their corresponding eonothems.")
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000000> "geochronologic eon"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000000> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005>)
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000001> (geochronologic era)
+
+AnnotationAssertion(dce:source <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000001> "https://stratigraphy.org/guide/chron")
+AnnotationAssertion(rdfs:comment <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000001> "An erathem is a chronostratigraphic unit greater than a system consisting of several systems.
+
+The geochronologic equivalent of an erathem is an era.
+
+The names of erathems in the Phanerozoic were chosen to reflect major changes of the history of life on Earth: Paleozoic (old life), Mesozoic (intermediate life), and Cenozoic (recent life). Eras carry the same name as their corresponding erathems.")
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000001> "geochronologic era"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000001> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005>)
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000002> (geochronologic period)
+
+AnnotationAssertion(dce:source <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000002> "https://stratigraphy.org/guide/chron")
+AnnotationAssertion(rdfs:comment <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000002> "A system is a unit of major rank in the conventional chronostratigraphic hierarchy, above a series and below an erathem. A system is composed of several consecutive series.
+
+The geochronologic equivalent of a system is a period. As an exception, the rank of subsystem (Mississippian, Pennsylvanian) is used for the Carboniferous System.")
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000002> "geochronologic period"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000002> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005>)
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000003> (geochronologic age)
+
+AnnotationAssertion(dce:source <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000003> "https://stratigraphy.org/guide/chron")
+AnnotationAssertion(rdfs:comment <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000003> "The stage includes all rocks deposited between two chronostratigraphic horizons defined by GSSPs. A stage is the lowest ranking unit in the chronostratigraphic hierarchy that can be recognized on a global scale.")
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000003> "geochronologic age"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000003> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005>)
+
+# Class: <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000004> (geochronologic epoch)
+
+AnnotationAssertion(dce:source <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000004> "https://stratigraphy.org/guide/chron")
+AnnotationAssertion(rdfs:comment <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000004> "The series is a chronostratigraphic unit ranking above subseries or stages and below a system. A series consists of several consecutive subseries, or (when subseries are not used) of several consecutive stages.
+
+The geochronologic equivalent of a series is an epoch.")
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000004> "geochronologic epoch"@en)
+SubClassOf(<https://www.inf.ufrgs.br/bdi/ontologies/GCTM_0000004> <https://www.inf.ufrgs.br/bdi/ontologies/GEOCORE_0000005>)
 
 
 )
